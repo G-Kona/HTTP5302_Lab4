@@ -1,0 +1,61 @@
+//Font Sizes
+$sm-font: 15px;
+$md-font: 18px;
+$lg-font: 25px;
+
+//Colours
+$lightgrey: lightgrey;
+
+li {
+  list-style-type: none;
+
+  &:hover {
+    background-color: $lightgrey;
+  }
+}
+
+header {
+  nav {
+    .links {
+      font-size: $lg-font;
+
+      > li {
+        display: inline;
+        position: relative;
+
+        > .nested-links {
+          padding-left: 0;
+          position: absolute;
+          left: 0;
+          width: 150%;
+          display: none;
+          font-size: $md-font;
+
+          > li {
+            position: relative;
+
+            .sublinks {
+              display: none;
+              position: absolute;
+              top: 0;
+              left: 100%;
+              width: 200%;
+              padding: 5px;
+              font-size: $sm-font;
+            }
+
+            &:hover > .sublinks {
+              display: block;
+            }
+
+          }
+        }
+
+        &:hover > .nested-links {
+          display: block;
+
+        }
+      }
+    }
+  }
+}
