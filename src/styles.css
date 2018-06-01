@@ -1,0 +1,101 @@
+/* You can add global styles to this file, and also import other style files */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+#nav li {
+  display: inline-block;
+}
+
+/*Link 1*/
+#nav1 {
+  position: absolute;
+}
+
+#nav1 li {
+  display: none;
+}
+
+#nav #nh1:hover #nav1 .nav1-link {
+  display: block;
+}
+
+/*Link 1 Sublink 1*/
+.nav1-link:hover #nav1-1 li {
+  display: block;
+}
+
+#nav1-1 {
+  position: absolute;
+  display: inline-block;
+  width: 100px;
+  padding-left: 10px;
+}
+
+/*Link 1 Sublink 2*/
+.nav1-link:hover #nav1-2 li {
+  display: block;
+}
+
+#nav1-2 {
+  position: absolute;
+  display: inline-block;
+  width: 100px;
+  padding-left: 10px;
+}
+
+/*Sizing*/
+#nav1 {
+  width: 100px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+/*Link 2*/
+#nav2 {
+  position: absolute;
+}
+
+#nav2 li {
+  display: none;
+}
+
+#nav #nh2:hover #nav2 .nav2-link {
+  display: block;
+}
+
+/*Link 2 Sublink 1*/
+.nav2-link:hover #nav2-1 li {
+  display: block;
+}
+
+#nav2-1 {
+  position: absolute;
+  display: inline-block;
+  width: 100px;
+  padding-left: 10px;
+}
+
+/*Link 2 Sublink 2*/
+.nav2-link:hover #nav2-2 li {
+  display: block;
+}
+
+#nav2-2 {
+  position: absolute;
+  display: inline-block;
+  width: 100px;
+  padding-left: 10px;
+}
+
+/*Sizing*/
+#nav2 {
+  width: 100px;
+}
+
+/*Hover Styles*/
+a:hover {
+  color: red;
+}
+
